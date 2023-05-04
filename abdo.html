@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+  html{
+        height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+   background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    background-attachment:fixed;
+}
+
+    body{
+        background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: 50% 50%;
+   color:white;
+      font-family:verdana;
+}
+    #loginbox{
+position: absolute;
+top: 50%;
+left: 50%;
+transform:translate(-50%,-50%);
+width: 400px;
+  padding: 40px;
+  box-sizing: border-box;
+background: rgba(0,0,0,.5);
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+    }
+    #loginbox{
+position: absolute;
+top: 50%;
+left: 50%;
+transform:translate(-50%,-50%);
+width: 400px;
+  padding: 40px;
+  box-sizing: border-box;
+background: rgba(0,0,0,.5);
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+    }
+
+   
+</style>
+<body>
+    <form action="results.html" method="GET">
+        <!--loginbox-->
+      <div id="loginbox">
+            <div>
+            <!--Name-->
+              <label For="Name">Name</label><br>
+            <input type="text" name="Name" id="Name" placeholder="Username" required><br>
+        </div>
+         <!--Emails-->
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" required placeholder="Email">
+         </div>
+        <!--Age-->
+        <div>
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age" min="1" max="200" required placeholder="Age" step="1">
+        </div>
+        <!--birthdate-->
+        <div>
+            <label for="date">Birthdate</label><br>
+            <input type="date" name="date" id="date">
+         </div>
+        <!--checkbox example:food-->
+        <div>
+          Favorite Food
+            <div>
+                <label for="banana">Banana</label>
+                <input type="checkbox" name="banana" id="banana">
+            </div>
+            <div>
+                <label for="peach">Peach</label>
+                <input type="checkbox" name="peach" id="peach">
+            </div>
+        </div>
+        <!--Gender:Male,Female-->
+        <div>
+            Gender
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="Male">
+            </div>
+            <div>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="Female">
+            </div>
+        </div>
+         <!--eyeColors-->
+        <div>
+            <label for="eyecolor">Eye Color</label>
+            <select name="eyecolor" id="eyecolor">
+                <option value="green">Green</option>
+                <option label="Red"></option>
+            </select>
+         </div>
+        <!--bio-->
+        <div>
+            <label for="bio">Bio</label><br>
+            <textarea id="bio" name="bio" placeholder="Write a biography here"></textarea>
+         </div>
+         <!--file submition-->
+        <div>
+            <label for="file">File</label>
+            <input id="file" type="file" name="file">
+         </div>
+        <!--Phone number-->
+        <div>
+            <label for="phone">Phone</label><br>
+            <input type="tel" name="phone" placeholder="Phone Number">
+        </div>
+        <!--Choosing favourite color-->
+        <div>
+            <label for="color">Color</label><br>
+            <input type="color" name="color" id="color">
+        </div>
+         <!--password-->
+        <div>
+                <label for="pass">Password</label><br>
+            <input type="password" name="Password" id="pass" placeholder="Password" required>
+        </div>
+           <!--sumbit/reset buttons-->
+        <button type="reset">Reset</button> 
+           <button type="submit">Submit</button>
+        </div>
+        </form>
+</body>
+</html>
